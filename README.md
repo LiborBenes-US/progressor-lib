@@ -1,6 +1,6 @@
 Title: progressor-lib
 
-Python Library Version: 1.0.0
+Python Library Version: 1.0.1
 
 Dependencies: Minimal, no external libraries needed. .py & .toml files.
 
@@ -197,10 +197,10 @@ progressor-lib/
 ├── LICENSE                          # MIT License ✓
 ├── README.md                    # Documentation
 ├── CHANGELOG.md            # Changes
-├── pyproject.toml                    # Build config (version: 1.0.0)
+├── pyproject.toml                    # Build config (version: 1.0.1)
 └── src/
     └── progressor-lib/
-        ├── __init__.py                # (version: 1.0.0)
+        ├── __init__.py                # (version: 1.0.1)
         ├── progress.py
         ├── colors.py
         └── themes.py
@@ -269,10 +269,10 @@ This file.
 
 All published changes to progressor-lib to be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.1/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-[1.0.0] - 2026-01-11
+[1.0.1] - 2026-01-11
 Added:
 • Initial public release.
 • Progress bar styles: Block, classic, braille, arrow, equal, dot, vertical, circle, square, gradient, hash, star, triangle, bounce.
@@ -300,7 +300,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "progressor-lib"
-version = "1.0.0"
+version = "1.0.1"
 description = "Enhanced progress bars with themes, colors, and custom templates"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -348,7 +348,7 @@ from .themes import (
     ASCIIArt, FancySymbols, CustomTemplate
 )
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __all__ = [
     "get_progress_drawer",
     "ProgressStyle",
