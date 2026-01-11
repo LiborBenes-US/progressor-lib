@@ -306,7 +306,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 authors = [
     {name = "Dr. Libor Benes, M.A.", email = "Benes@iwp.edu"}
-S]
+]
 license = {text = "MIT"}
 classifiers = [
     "Development Status :: 5 - Production/Stable",
@@ -1114,4 +1114,5 @@ class CustomTemplate:
             Pattern repeated to fit width
         """
         repeats = (width // len(pattern)) + 1
+
         return (pattern * repeats)[:width]
