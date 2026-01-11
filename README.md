@@ -1,10 +1,10 @@
-Title: progressor_lib
+Title: progressor-lib
 
 Python Library Version: 1.0.0
 
 Dependencies: Minimal, no external libraries needed. .py & .toml files.
 
-Author: Dr. Libor Benes, M.A., Creator of progressor_lib.
+Author: Dr. Libor Benes, M.A., Creator of progressor-lib.
 
 This Python Library was developed on Sunday, January 11, 2026.
 
@@ -15,10 +15,10 @@ This Python Library was developed by Dr. Libor Benes, M.A., using Grok 3 AI and 
 Support E-mail: Benes@iwp.edu
 
 Purpose:
-progressor_lib is a Python library for enhanced progress bars with themes, colors, and custom templates.
+progressor-lib is a Python library for enhanced progress bars with themes, colors, and custom templates.
 
 
-![progressor_lib Demo](https://img.shields.io/badge/demo-see%20below-blue)
+![progressor-lib Demo](https://img.shields.io/badge/demo-see%20below-blue)
 
 Features:
 • 15+ Built-in Styles: Block, classic, braille, arrows, circles, squares, triangles, and more.
@@ -33,13 +33,13 @@ Features:
 Installation:
 
 ```bash
-pip install progressor_lib
+pip install progressor-lib
 
 
 Quick Start:
 
 import time
-from progressor_lib import get_progress_drawer, ProgressStyle
+from progressor-lib import get_progress_drawer, ProgressStyle
 
 # Create a progress drawer
 draw = get_progress_drawer(
@@ -60,7 +60,7 @@ for i in range(101):
 Examples:
 Multiple Styles:
 
-from progressor_lib import get_progress_drawer, ProgressStyle
+from progressor-lib import get_progress_drawer, ProgressStyle
 
 # Block style with detailed info
 draw1 = get_progress_drawer(
@@ -89,7 +89,7 @@ draw3 = get_progress_drawer(
 
 Custom Characters:
 
-from progressor_lib import get_progress_drawer
+from progressor-lib import get_progress_drawer
 
 # Simple custom characters
 draw = get_progress_drawer(
@@ -99,7 +99,7 @@ draw = get_progress_drawer(
 )
 
 # Or use Unicode block elements
-from progressor_lib import UnicodeBlocks
+from progressor-lib import UnicodeBlocks
 draw = get_progress_drawer(
     style=UnicodeBlocks.HORIZONTAL,
     width=20,
@@ -109,7 +109,7 @@ draw = get_progress_drawer(
 
 Multi-Bar Display:
 
-from progressor_lib import MultiProgress
+from progressor-lib import MultiProgress
 import time
 
 # Track 3 concurrent processes
@@ -126,35 +126,35 @@ multi.complete()  # Clean up display
 
 Available Styles:
 
-Style                             Example                                                   Description
+Style                                                Example                                                   Description
 ProgressStyle.BLOCK	               ████████░░░░░░░░	                Smooth block progression
-ProgressStyle.CLASSIC	               ■■■■■■■■□□□□□□□□	            Classic filled/empty squares
-ProgressStyle.BRAILLE                  ⣿⣿⣿⣿⣀⣀⣀⣀	                Braille pattern progression
-ProgressStyle.ARROW	               >>>>>>>>--------	                Arrow forward
-ProgressStyle.VERTICAL                ▁▂▃▄▅▆▇█	                Vertical height increase
-ProgressStyle.CIRCLE	               ○◔◑◕●	                    Circle filling animation
-ProgressStyle.SQUARE	               □◱◲■	                    Square filling animation
-ProgressStyle.GRADIENT	       ░▒▓█	                                Shade gradient
-ProgressStyle.STAR	                       ★★★★☆☆☆☆	            Star rating
-ProgressStyle.TRIANGLE	               ▲▲▲▲▽▽▽▽	                Triangle progression
-ProgressStyle.BOUNCE	               (→ )	                        Bouncing animation
-Plus spinner variants	                       ⠋⠙⠹⠸⠼⠴	            Various spinner styles
+ProgressStyle.CLASSIC	               ■■■■■■■■□□□□□□□□	        Classic filled/empty squares
+ProgressStyle.BRAILLE                  ⣿⣿⣿⣿⣀⣀⣀⣀	                                        Braille pattern progression
+ProgressStyle.ARROW	               >>>>>>>>--------	                                Arrow forward
+ProgressStyle.VERTICAL                ▁▂▃▄▅▆▇█	                                        Vertical height increase
+ProgressStyle.CIRCLE	               ○◔◑◕●	                                                Circle filling animation
+ProgressStyle.SQUARE	               □◱◲■	                                                Square filling animation
+ProgressStyle.GRADIENT	       ░▒▓█	                                                Shade gradient
+ProgressStyle.STAR	                       ★★★★☆☆☆☆	                                Star rating
+ProgressStyle.TRIANGLE	               ▲▲▲▲▽▽▽▽	                                Triangle progression
+ProgressStyle.BOUNCE	               (→ )	                                                        Bouncing animation
+Plus spinner variants	                       ⠋⠙⠹⠸⠼⠴	                                        Various spinner styles
 
 Color Themes:
-Theme	                   Description	                           Best For
-None	                   No coloring (default)	               Simple terminals
-"green_red"	               Green progress, red remaining	       Success/failure indicators
-"blue_yellow"	           Blue progress, yellow remaining	       Cool/warm contrast
-"gradient"	               Red→Yellow→Green based on progress	   Process completion
-"rainbow"	               Rainbow colors across the bar	       Fun, colorful displays
-"monochrome"	           Bright white on black	               Low-color terminals
-"terminal"	               Default colors with dimmed empty	       Subtle, clean look
+Theme	                                      Description	                                                Best For
+None	                                              No coloring (default)	                                Simple terminals
+"green_red"	                              Green progress, red remaining	                Success/failure indicators
+"blue_yellow"	                              Blue progress, yellow remaining	                Cool/warm contrast
+"gradient"	                                      Red→Yellow→Green based on progress	Process completion
+"rainbow"	                                      Rainbow colors across the bar	                Fun, colorful displays
+"monochrome"	                              Bright white on black	                                Low-color terminals
+"terminal"	                                      Default colors with dimmed empty	        Subtle, clean look
 
 
 Unicode Collections:
 The library includes organized character sets:
 
-from progressor_lib import UnicodeBlocks, GeometricSymbols, EmojiThemes
+from progressor-lib import UnicodeBlocks, GeometricSymbols, EmojiThemes
 
 # Block elements (8 levels of fill)
 UnicodeBlocks.HORIZONTAL  # ['▏', '▎', '▍', '▌', '▋', '▊', '▉', '█']
@@ -166,7 +166,7 @@ GeometricSymbols.CIRCLES["filled"]  # ['○', '◔', '◑', '◕', '●']
 EmojiThemes.NATURE["weather"]  # ['🌧️', '🌦️', '⛅', '🌤️', '☀️']
 
 # Create custom sequences
-from progressor_lib import CustomTemplate
+from progressor-lib import CustomTemplate
 CustomTemplate.from_string("♩♪♫♬", stages=10)
 
 
@@ -193,13 +193,13 @@ multi.update(index, progress, label="")
 multi.complete()
 
 
-progressor_lib/
+progressor-lib/
 ├── LICENSE                          # MIT License ✓
 ├── README.md                    # Documentation
 ├── CHANGELOG.md            # Changes
 ├── pyproject.toml                    # Build config (version: 1.0.0)
 └── src/
-    └── progressor_lib/
+    └── progressor-lib/
         ├── __init__.py                # (version: 1.0.0)
         ├── progress.py
         ├── colors.py
@@ -215,7 +215,7 @@ Requirements:
 Testing:
 
 # After installation
-python -c "from progressor_lib import get_progress_drawer, ProgressStyle; print('Import successful')"
+python -c "from progressor-lib import get_progress_drawer, ProgressStyle; print('Import successful')"
 
 # Run the advanced test
 python advanced_test.py
@@ -267,7 +267,7 @@ This file.
 
 # CHANGELOG.md
 
-All published changes to progressor_lib to be documented in this file.
+All published changes to progressor-lib to be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -299,7 +299,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "progressor_lib"
+name = "progressor-lib"
 version = "1.0.0"
 description = "Enhanced progress bars with themes, colors, and custom templates"
 readme = "README.md"
@@ -324,12 +324,20 @@ classifiers = [
     "Topic :: Terminals"
 ]
 
+[project.urls]
+Homepage = "https://github.com/LiborBenes-US/progressor-lib"
+Repository = "https://github.com/LiborBenes-US/progressor-lib"
+Issues = "https://github.com/LiborBenes-US/progressor-lib/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/progressor"]
+
 --------------------------------------------------------------------------------------------------
 
-5) src/progressor_lib/__init__.py
+5) src/progressor-lib/__init__.py
 
 """
-progressor_lib - Enhanced progress bars with themes, colors, and custom templates.
+progressor-lib - Enhanced progress bars with themes, colors, and custom templates.
 Minimal dependencies, no external libraries needed.
 """
 
@@ -359,7 +367,7 @@ __all__ = [
 
 --------------------------------------------------------------------------------------------------
 
-6) src/progressor_lib/progress.py
+6) src/progressor-lib/progress.py
 
 """
 Main progress bar implementation.
@@ -774,7 +782,7 @@ class MultiProgress:
 
 --------------------------------------------------------------------------------------------------
 
-7) src/progressor_lib/colors.py
+7) src/progressor-lib/colors.py
 
 """
 ANSI color support for progress bars.
@@ -909,7 +917,7 @@ def apply_color(text: str, color_code: str, reset: bool = True) -> str:
 
 --------------------------------------------------------------------------------------------------
 
-8) src/progressor_lib/themes.py
+8) src/progressor-lib/themes.py
 
 """
 Expanded collection of Unicode characters and patterns for progress bars.
